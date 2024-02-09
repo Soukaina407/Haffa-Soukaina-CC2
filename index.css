@@ -1,0 +1,151 @@
+/* EXERCICE 1 : */
+
+
+/* Quetion 1 */
+
+h1{
+    text-align: center;
+    color: red;
+}
+
+/* Quetion 2 */
+
+h2{
+   text-decoration:underline; 
+} 
+
+/* Quetion3 */
+
+article section>h2{
+    color: green;
+}
+
+/* Quetion 4  */
+h2+p{
+    color: blue;
+    font-family: "italique";
+}
+
+/* Quetion 5 */
+
+
+/* EXERCICE 2 : */
+
+
+.div1{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    
+}
+.div1:hover{
+    -ms-transform-origin-x: 100px;
+    -ms-transform-origin-y: 100px;
+    transform: rotate(40deg);
+
+}
+@media(max-width:700px){
+    .div1{
+        background-color: red;
+    }
+}
+@media(min-width:1000px){
+    .div1{
+        background-color: green;
+    }
+}
+
+
+/* EXERCICE 3 */
+
+header{
+    margin-top: 60px;
+    background-color:black;
+    width: 100%;
+    height: 70px;
+    padding:2erm 9%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    font-size: 2rem;
+    color:white;
+    margin-left: 40px;
+    text-decoration: none;
+    background-color: gray;
+
+}
+.logo:hover{
+    background-color: red;
+}
+.navbar{
+    flex-basis:300px;
+    display: flex;
+    border:5px;
+    border-radius: 7px;
+}
+.navbar ul{
+    flex-basis:300px;
+    width: 100%;
+    height: 70px;
+    font-size:  20px;
+    display: flex;
+    margin-top: 60px;
+    margin-bottom: 16px;
+    margin-left: 870px;
+}
+.navbar ul li{
+    display:inline;
+    margin-right: 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color:white
+}
+.navbar a:hover{
+    color: red;
+
+}
+
+/* EXERCICE4 */
+.div2{
+    margin-top: 50px;
+    width: 70%;
+    height: 400px;
+    background-color: rgb(222, 167, 150);
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+
+
+/* EXERCICE 5 */
+
+
+  /* Styles pour la boîte */
+  #Boite {
+    background-color: red;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation-name: redBox; /* Nom de l'animation */
+    animation-duration: 2s; /* Durée de l'animation */
+    animation-iteration-count: infinite; /* Nombre d'itérations de l'animation */
+  }
+
+  /* Keyframes pour l'animation */
+  @keyframes redBox {
+    0% {
+      left: 0; /* Position initiale */
+    }
+    50% {
+      left: 50%; /* Position à la moitié de la durée totale */
+    }
+    100% {
+      left: 0; /* Position initiale */
+    }
+  }
+  
